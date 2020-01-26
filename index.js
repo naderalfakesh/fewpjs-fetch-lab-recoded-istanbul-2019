@@ -1,4 +1,4 @@
-function fetchBooks() {
+function getPosts() {
   return fetch('http://anapioficeandfire.com/api/books')
   .then(res => res.json())
   .then(json => renderBooks(json))
