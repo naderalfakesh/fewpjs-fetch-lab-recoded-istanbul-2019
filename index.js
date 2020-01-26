@@ -1,5 +1,5 @@
-function getPosts() {
-  return fetch('http://anapioficeandfire.com/api/books')
+function fetchBooks() {
+  return fetch('https://5e2dbab63b0d640014be0eb6.mockapi.io/api/v0/books')
   .then(res => res.json())
   .then(json => renderBooks(json))
 }
